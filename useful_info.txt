@@ -1,0 +1,17 @@
+
+// create a table with a primary name 'nameID' int and not null auto increment.
+CREATE TABLE tableName ( nameID int not null auto_increment
+,first_name varchar(100)
+,last_name varchar(100)
+,primary key (nameID)
+);
+
+// Rename a table using ALTER TABLE table_name RENAME table_name
+ALTER TABLE tableName RENAME newTableName;
+
+// Miss-spelled Richard so we use the UPDATE and SET column name should be and where column Name is =miss-spelling:
+// release columnName with unique name of column
+UPDATE tableName SET columnName='Richard' WHERE colummName='Ritchard';
+
+// Insert into table name (column_name1, column_name2) values (‘value’ , ‘value)
+INSERT INTO tableName (FIRST_NAME, LAST_NAME) VALUES ('Robi' , 'Resendez') ,('Richard' , 'Resendez') ,('Castro' , 'Mamba');
